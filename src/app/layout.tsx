@@ -9,7 +9,7 @@ import { ClientProviders } from "@/components/providers/client-providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "BuyZone - Your One-Stop Online Shop",
+    title: "BuyZone",
     description:
         "Shop for the latest products at great prices. Fast shipping and easy returns.",
 };

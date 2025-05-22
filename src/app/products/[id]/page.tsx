@@ -1,27 +1,26 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { ProductCard } from "@/components/products/product-card";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useCart } from "@/contexts/cart-context";
+import { useToast } from "@/hooks/use-toast";
+import { getProductById, getProductsByCategory } from "@/lib/data";
 import {
-    Truck,
-    ShieldCheck,
     ArrowLeft,
     Heart,
     Minus,
     Plus,
     RotateCcw,
-    Star,
+    ShieldCheck,
     ShoppingCart,
+    Star,
+    Truck,
 } from "lucide-react";
-import { getProductById, getProductsByCategory } from "@/lib/data";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ProductCard } from "@/components/products/product-card";
-import { useCart } from "@/contexts/cart-context";
-import { useToast } from "@/hooks/use-toast";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function ProductDetailPage({
     params,

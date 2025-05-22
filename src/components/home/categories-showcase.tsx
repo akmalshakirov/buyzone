@@ -38,7 +38,7 @@ export function CategoriesShowcase() {
                                 key={category.id}
                                 href={`/products?category=${category.id}`}
                                 className={cn(
-                                    "group relative rounded-lg overflow-hidden aspect-square md:aspect-auto p-[5.604vw]",
+                                    "group relative rounded-lg overflow-hidden aspect-square md:aspect-auto p-[6.604vw]",
                                     index === 0
                                         ? "md:col-span-2 md:row-span-2"
                                         : "",
